@@ -25,7 +25,7 @@ cookbook_file '/home/ubuntu/require/requirements.txt' do
 end
 
 execute 'pip install requirements' do
-  command 'pip3 install -r /home/ubuntu/app/requirements.txt'
+  command 'pip3 install -r /home/ubuntu/require/requirements.txt'
 end
 
 directory "/home/vagrant/Downloads" do
