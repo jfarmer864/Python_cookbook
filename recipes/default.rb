@@ -28,11 +28,11 @@ execute 'pip install requirements' do
   command 'pip3 install -r /home/ubuntu/require/requirements.txt'
 end
 
-directory "/home/vagrant/Downloads" do
+directory "/home/ubuntu/Downloads" do
   action :create
 end
 
-file '/home/vagrant/Downloads/ItJobsWatchTop30.csv' do
+file '/home/ubuntu/Downloads/ItJobsWatchTop30.csv' do
   action :create
   mode '777'
 end

@@ -31,10 +31,10 @@ describe 'python_cookbook::default' do
       expect(chef_run).to run_execute "pip install requirements"
     end
     it 'should create directory Downloads' do
-      expect(chef_run).to create_directory "/home/vagrant/Downloads"
+      expect(chef_run).to create_directory "/home/ubuntu/Downloads"
     end
     it 'should create a file ItJobsWatchTop30.csv' do
-      expect(chef_run).to create_file "/home/vagrant/Downloads/ItJobsWatchTop30.csv"
+      expect(chef_run).to create_file "/home/ubuntu/Downloads/ItJobsWatchTop30.csv"
     end
   end
 
